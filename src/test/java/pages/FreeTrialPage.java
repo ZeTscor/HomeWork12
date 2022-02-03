@@ -11,7 +11,7 @@ public class FreeTrialPage {
     trialText = $(byText("Зарегистрируйтесь и смотрите START 7 дней бесплатно")),
     emailFiled = $("#signField"),
     passwordField = $("#signPassword"),
-    privatePolitic = $x("//input[@name='agreement']"),
+    privatePolitic = $x("//label[@for='agreement']"),
     regButton = $("div[class='Button_fullWidth__3hW2V']"),
     cardNumberField = $("#cardNumber"),
     cardDateField = $("#cc-exp"),
