@@ -33,7 +33,7 @@ public class FreeTrialPage {
         return this;
     }
     public FreeTrialPage agreementPrivate(){
-        privatePolitic.click();
+        privatePolitic.scrollIntoView(true).click();
         return this;
     }
     public FreeTrialPage regNewAc(){
