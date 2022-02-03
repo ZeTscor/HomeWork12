@@ -11,7 +11,10 @@ public class Tests extends TestBase {
      @Test
      @DisplayName("Элементы главной страници")
      void MainPageTest(){
-         mainPage.openPage();
+         mainPage.openPage()
+                 .checkStartProduct()
+                 .checkTopTen()
+                 .startFreeTrial();
     }
     @Test
     @DisplayName("Проверка регистрации")

@@ -25,6 +25,7 @@ public class FreeTrialPage {
         return this;
     }
     public FreeTrialPage typeEmail(String email){
+        emailFiled.shouldHave();
         emailFiled.setValue(email);
         return this;
     }
@@ -61,6 +62,11 @@ public class FreeTrialPage {
     }
     public FreeTrialPage errorComplete(){
         errorPay.validText();
+        return this;
+    }
+
+    public FreeTrialPage openCheck(){
+        trialText.shouldHave();
         return this;
     }
 
