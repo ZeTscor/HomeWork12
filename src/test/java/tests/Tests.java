@@ -23,6 +23,7 @@ public class Tests extends TestBase {
                 .typeEmail(data.email)
                 .typePassword(data.password)
                 .agreementPrivate()
+                .agreeConsent()
                 .regNewAc()
                 .typeCardNumber(data.cardNumber)
                 .typeCardDate(data.cardDate)

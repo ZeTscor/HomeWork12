@@ -12,6 +12,7 @@ public class FreeTrialPage {
     emailFiled = $("#signField"),
     passwordField = $("#signPassword"),
     privatePolitic = $x("//label[@for='agreement']"),
+    agreeConsent = $x("//button[.= 'Agree']"),
     regButton = $x("//span[@class='Button_button-text__3dENX']"),
     cardNumberField = $("#cardNumber"),
     cardDateField = $("#cc-exp"),
@@ -34,6 +35,10 @@ public class FreeTrialPage {
     }
     public FreeTrialPage agreementPrivate(){
         privatePolitic.scrollIntoView(true).click();
+        return this;
+    }
+    public FreeTrialPage agreeConsent(){
+        agreeConsent.click();
         return this;
     }
     public FreeTrialPage regNewAc(){
