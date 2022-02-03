@@ -12,8 +12,8 @@ public class MainPage {
     public FreeTrialPage freeTrial = new FreeTrialPage();
     private SelenideElement
     newFilms = $("#NewFeatured_slide__3yot_"),
-    topTen = $("h2[data-testid='title_label']"),
-    starProduct = $("h2[data-testid='title_label1']"),
+    topTen = $x("//div[@class='VideoUnit_vline__header__2alTs'][.= 'Топ-10 на START']"),
+    starProduct = $x("//div[@class='VideoUnit_vline__header__2alTs'][.= 'START представляет']"),
     trialButton = $("span[data-testid='try_free_button_text']");
 
     public MainPage openPage(){
@@ -22,11 +22,11 @@ public class MainPage {
         return this;
     }
     public MainPage checkTopTen(){
-        topTen.shouldBe(Condition.text("Топ-10 на STAR"));
+        topTen.scrollIntoView(true).shouldHave();
         return this;
     }
     public MainPage checkStartProduct(){
-        starProduct.shouldBe(Condition.text("STAR представляет"));
+        starProduct.shouldHave();
         return this;
     }
     public MainPage startFreeTrial(){
