@@ -12,7 +12,7 @@ public class FreeTrialPage {
     emailFiled = $("#signField"),
     passwordField = $("#signPassword"),
     privatePolitic = $x("//label[@for='agreement']"),
-    regButton = $x("span[@class='Button_button-text__3dENX']"),
+    regButton = $x("//span[@class='Button_button-text__3dENX']"),
     cardNumberField = $("#cardNumber"),
     cardDateField = $("#cc-exp"),
     cardCVVField = $("#cardCsc"),
