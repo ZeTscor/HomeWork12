@@ -9,6 +9,7 @@ public class FreeTrialPage {
     public ErrorPayPage errorPay = new ErrorPayPage();
     private SelenideElement
     trialText = $(byText("Зарегистрируйтесь и смотрите START 7 дней бесплатно")),
+    cookieAccept = $x("//a[.='Использовать все cookies']"),
     emailFiled = $("#signField"),
     passwordField = $("#signPassword"),
     privatePolitic = $x("//label[@for='agreement']"),
@@ -22,6 +23,7 @@ public class FreeTrialPage {
     public FreeTrialPage openPage(){
         open("https://start.ru/signup");
         trialText.shouldHave();
+        cookieAccept.click();
         return this;
     }
     public FreeTrialPage typeEmail(String email){
