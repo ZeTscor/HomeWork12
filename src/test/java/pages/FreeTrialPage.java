@@ -3,8 +3,7 @@ package pages;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selectors.*;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 
 public class FreeTrialPage {
     public ErrorPayPage errorPay = new ErrorPayPage();
@@ -12,7 +11,7 @@ public class FreeTrialPage {
     trialText = $(byText("Зарегистрируйтесь и смотрите START 7 дней бесплатно")),
     emailFiled = $("#signField"),
     passwordField = $("#signPassword"),
-    privatePolitic = $("input[id='agreement']"),
+    privatePolitic = $x("//input[@name='agreement']"),
     regButton = $("div[class='Button_fullWidth__3hW2V']"),
     cardNumberField = $("#cardNumber"),
     cardDateField = $("#cc-exp"),
