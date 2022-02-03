@@ -11,7 +11,7 @@ public class FreeTrialPage {
     private SelenideElement
     trialText = $(byText("Зарегистрируйтесь и смотрите START 7 дней бесплатно")),
     emailFiled = $("#signField"),
-    passwordField = $("#sidnPassword"),
+    passwordField = $("#signPassword"),
     privatePolitic = $("agreement"),
     regButton = $("div[class='Button_fullWidth__3hW2V']"),
     cardNumberField = $("#cardNumber"),
