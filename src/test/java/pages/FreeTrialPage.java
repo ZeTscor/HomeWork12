@@ -42,7 +42,7 @@ public class FreeTrialPage {
         return this;
     }
     public FreeTrialPage regNewAc(){
-        regButton.click();
+        regButton.scrollIntoView(true).click();
         return this;
     }
 
