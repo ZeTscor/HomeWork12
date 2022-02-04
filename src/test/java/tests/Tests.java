@@ -52,6 +52,7 @@ public class Tests extends TestBase {
     void FindFilmTest(){
         mainPage.openPage()
                 .findFilm(DataStorage.NAME);
+        findPage.foundedFilms(DataStorage.NAME);
         filmPage.InfoFilms();
     }
 }

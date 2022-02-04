@@ -20,6 +20,7 @@ public class TestBase {
     public AuthorizationPage authorizationPage = new AuthorizationPage();
     public ProfilePage profilePage = new ProfilePage();
     public FilmPage filmPage = new FilmPage();
+    public FindPage findPage = new FindPage();
     public static CredentialsConfig credentials =
             ConfigFactory.create(CredentialsConfig.class);
     static String login = credentials.login();
