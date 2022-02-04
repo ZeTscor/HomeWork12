@@ -10,7 +10,7 @@ public class FindPage {
             films = $x("//a[@class='VideoUnit_video_unit_content_cell__1AxPk'][1]");
 
     public FindPage foundedFilms(String name){
-        Assertions.assertEquals(name, films.getValue());
+        Assertions.assertTrue(films.getText().contains(name));
         films.click();
         return this;
     }
