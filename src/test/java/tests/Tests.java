@@ -1,6 +1,7 @@
 package tests;
 
 import data.DataStorage;
+import io.qameta.allure.Flaky;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -19,6 +20,7 @@ public class Tests extends TestBase {
     }
 
     @Test
+    @Flaky
     @DisplayName("Проверка регистрации")
     void FreeTrialTest() {
         freeTrial.openPage()
@@ -43,12 +45,15 @@ public class Tests extends TestBase {
                 .signButton();
     }
     @Test
+    @DisplayName("Cтраничка фильма")
     void FilmTest(){
         filmPage.openPage()
                 .ageAccept()
                 .InfoFilms();
     }
     @Test
+    @Flaky
+    @DisplayName("Поиск по фильму")
     void FindFilmTest(){
         mainPage.openPage()
                 .acceptCookie()
