@@ -11,10 +11,11 @@ public class FindPage {
 
 
     public FindPage foundedFilms(String name){
+        cookieAcceptButton.click();
         SelenideElement
                 films = $x("(//*[contains(text(), '"+name+"')])[2]");
         Assertions.assertTrue(films.getText().contains(name));
-        cookieAcceptButton.click();
+
         films.click();
         return this;
     }
