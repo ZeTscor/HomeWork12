@@ -1,5 +1,6 @@
 package pages;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import data.DataStorage;
 import data.DataStorage.*;
@@ -12,7 +13,8 @@ public class AuthorizationPage {
             signPage = $x("//div[@class='Sign_sign__form-title__3BM85'][.='Вход в аккаунт']"),
             signEmailField = $x("//input[@id='signField']"),
             signPasswordField = $x("//input[@id='signPassword']"),
-            buttonSign = $x("//*[@class='Button_button-text__3dENX'][.='Войти']");
+            buttonSign = $x("//*[@class='Button_button-text__3dENX'][.='Войти']"),
+            capchaField = $x("//input[@id='signFieldCapcha']");
 
     public AuthorizationPage openPage(){
         open("https://start.ru/signin");
@@ -30,6 +32,7 @@ public class AuthorizationPage {
     }
     public AuthorizationPage signButton(){
         buttonSign.click();
+        capchaField.shouldHave(Condition.visible);
         return this;
     }
 

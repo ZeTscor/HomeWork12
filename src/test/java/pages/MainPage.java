@@ -16,7 +16,9 @@ public class MainPage {
             starProduct = $x("//div[@class='VideoUnit_vline__header__2alTs'][.= 'START представляет']"),
             trialButton = $("span[data-testid='try_free_button_text']"),
             filmHref = $x("//div[@class='VideoUnit_vline__slider__3uu_U'][4]"),
-            profileIco = $x("//div[@class='HeaderMenu_header-menu-authorized__2K3x5'");
+            profileIco = $x("//div[@class='HeaderMenu_header-menu-authorized__2K3x5'"),
+            cookieAcceptButton = $x("//a[.='Использовать все cookies']");
+
 
     public MainPage openPage() {
         open("https://start.ru");
@@ -42,12 +44,16 @@ public class MainPage {
     }
 
     public MainPage openFilm() {
-        filmHref.click();
+        filmHref.scrollIntoView(true).click();
         return this;
     }
 
     public MainPage openProfile(){
         profileIco.click();
+        return this;
+    }
+    public MainPage acceptCookie(){
+        cookieAcceptButton.click();
         return this;
     }
 

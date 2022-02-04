@@ -15,6 +15,7 @@ public class FilmPage {
     public FilmPage openPage(){
         MainPage mainPage = new MainPage();
         mainPage.openPage()
+                .acceptCookie()
                 .openFilm();
         return this;
     }
