@@ -1,24 +1,26 @@
 package tests;
 
+import data.DataStorage;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import pages.MainPage;
+import pages.ProfilePage;
 
 @Tag("Owner")
 public class Tests extends TestBase {
 
-     @Test
-     @DisplayName("Элементы главной страници")
-     void MainPageTest(){
-         mainPage.openPage()
-                 .checkStartProduct()
-                 .checkTopTen()
-                 .startFreeTrial();
+    @Test
+    @DisplayName("Элементы главной страници")
+    void MainPageTest() {
+        mainPage.openPage()
+                .checkStartProduct()
+                .checkTopTen()
+                .startFreeTrial();
     }
+
     @Test
     @DisplayName("Проверка регистрации")
-    void FreeTrialTest(){
+    void FreeTrialTest() {
         freeTrial.openPage()
                 .typeEmail(data.email)
                 .typePassword(data.password)
@@ -29,6 +31,22 @@ public class Tests extends TestBase {
                 .typeCardDate(data.cardDate)
                 .typeCardCVV(data.cardCVV)
                 .clickPayButton()
-                .errorComplete();
+                .errorCardNumber();
+    }
+
+    @Test
+    @DisplayName("Авторизация")
+    void AuthorizationTest() {
+        authorizationPage.openPage()
+                .typeEmail(DataStorage.EMAIL)
+                .typePassword(DataStorage.PASSWORD)
+                .signButton();
+        profilePage.openPage()
+                .emailAssert(DataStorage.EMAIL);
+    }
+    @Test
+    void FilmTest(){
+        filmPage.openPage()
+                .InfoFilms();
     }
 }

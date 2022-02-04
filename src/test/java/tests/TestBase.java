@@ -9,15 +9,17 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import pages.FreeTrialPage;
-import pages.MainPage;
-
+import pages.*;
+import data.DataStorage.*;
 
 
 public class TestBase {
-    public DataGen data = new DataGen();
+    public static DataGen data = new DataGen();
     public MainPage mainPage = new MainPage();
     public FreeTrialPage freeTrial = new FreeTrialPage();
+    public AuthorizationPage authorizationPage = new AuthorizationPage();
+    public ProfilePage profilePage = new ProfilePage();
+    public FilmPage filmPage = new FilmPage();
     public static CredentialsConfig credentials =
             ConfigFactory.create(CredentialsConfig.class);
     static String login = credentials.login();
