@@ -53,7 +53,7 @@ public class Tests extends TestBase {
                 .ageAccept()
                 .InfoFilms();
     }
-    @ValueSource(strings = {"Маша и Медведь", "Однажды в ыГолливуде"})
+    @ValueSource(strings = {"Маша и Медведь", "Однажды в Голливуде"})
     @ParameterizedTest(name = "Поиск по фильмам {0}")
     @Flaky
     void FindFilmTest(String filmName){
