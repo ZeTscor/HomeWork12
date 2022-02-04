@@ -4,7 +4,9 @@ import data.DataStorage;
 import io.qameta.allure.Flaky;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.*;
 import pages.ProfilePage;
 
 @Tag("Owner")
@@ -51,14 +53,14 @@ public class Tests extends TestBase {
                 .ageAccept()
                 .InfoFilms();
     }
-    @Test
+    @ValueSource(strings = {"Маша и Медведь", "Однажды в... Голливуде"})
+    @ParameterizedTest(name = "Поиск по фильмам {0}")
     @Flaky
-    @DisplayName("Поиск по фильму")
-    void FindFilmTest(){
+    void FindFilmTest(String filmName){
         mainPage.openPage()
                 .acceptCookie()
-                .findFilm(DataStorage.NAME);
-        findPage.foundedFilms(DataStorage.NAME);
+                .findFilm(filmName);
+        findPage.foundedFilms(filmName);
         filmPage.InfoFilms();
     }
 }
