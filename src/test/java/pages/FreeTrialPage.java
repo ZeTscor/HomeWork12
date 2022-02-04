@@ -27,7 +27,7 @@ public class FreeTrialPage {
     public FreeTrialPage openPage() {
         open("https://start.ru/signup");
         trialText.shouldHave();
-        //cookieAccept.click();
+        cookieAccept.click();
         return this;
     }
 

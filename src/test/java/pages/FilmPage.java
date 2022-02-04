@@ -23,8 +23,8 @@ public class FilmPage {
     public FilmPage InfoFilms() {
         ageAccept.click();
         freeView.shouldHave(Condition.visible);
-        trellis.shouldHave(Condition.visible);
-        castInfo.shouldHave(Condition.visible);
+        trellis.scrollIntoView(true).shouldHave(Condition.visible).click();
+        castInfo.scrollIntoView(true).shouldHave(Condition.visible);
         return this;
     }
 
