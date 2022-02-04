@@ -14,10 +14,11 @@ public class FilmPage {
             castInfo = $x("//div[@class='Cast_product__cast__Fppd9'][.= 'Актеры и съемочная группа']");
 
     public FilmPage openPage(){
-        MainPage mainPage = new MainPage();
-        mainPage.openPage()
-                //.acceptCookie()
-                .openFilm();
+//        MainPage mainPage = new MainPage();
+//        mainPage.openPage()
+//                //.acceptCookie()
+//                .openFilm();
+        open("https://start.ru/watch/professor-t-osobye-prestupleniya");
         return this;
     }
     public FilmPage InfoFilms() {
