@@ -18,7 +18,7 @@ public class FilmPage {
 //        mainPage.openPage()
 //                //.acceptCookie()
 //                .openFilm();
-        open("https://start.ru/watch/professor-t-osobye-prestupleniya");
+        open("https://start.ru/watch/nadezhda");
         return this;
     }
     public FilmPage InfoFilms() {
