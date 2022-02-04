@@ -17,7 +17,9 @@ public class MainPage {
             trialButton = $("span[data-testid='try_free_button_text']"),
             filmHref = $x("//div[@class='VideoUnit_vline__slider__3uu_U']['4']"),
             profileIco = $x("//div[@class='HeaderMenu_header-menu-authorized__2K3x5'"),
-            cookieAcceptButton = $x("//a[.='Использовать все cookies']");
+            cookieAcceptButton = $x("//a[.='Использовать все cookies']"),
+            findFilmImg = $x("//img[@class='HeaderSearch_header-search__loupe__dxtrS']"),
+            findFilmInput = $x("//input[@class='HeaderSearch_header-search__input-text__1FN0Q']");
 
 
     public MainPage openPage() {
@@ -54,6 +56,11 @@ public class MainPage {
     }
     public MainPage acceptCookie(){
         cookieAcceptButton.click();
+        return this;
+    }
+    public MainPage findFilm(String name){
+        findFilmImg.click();
+        findFilmInput.setValue(name);
         return this;
     }
 

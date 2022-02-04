@@ -45,6 +45,12 @@ public class Tests extends TestBase {
     @Test
     void FilmTest(){
         filmPage.openPage()
+                .ageAccept()
                 .InfoFilms();
+    }
+    @Test
+    void FindFilmTest(){
+        mainPage.findFilm(DataStorage.NAME);
+        filmPage.InfoFilms();
     }
 }

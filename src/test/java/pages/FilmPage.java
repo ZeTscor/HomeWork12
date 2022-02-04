@@ -21,8 +21,11 @@ public class FilmPage {
         open("https://start.ru/watch/nadezhda");
         return this;
     }
-    public FilmPage InfoFilms() {
+    public FilmPage ageAccept(){
         ageAccept.click();
+        return this;
+    }
+    public FilmPage InfoFilms() {
         freeView.shouldHave(Condition.visible);
         trellis.scrollIntoView(true).shouldHave(Condition.visible);
         castInfo.scrollIntoView(true).shouldHave(Condition.visible);
