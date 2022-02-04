@@ -60,7 +60,7 @@ public class MainPage {
     }
     public MainPage findFilm(String name){
         findFilmImg.click();
-        findFilmInput.setValue(name);
+        findFilmInput.setValue(name).pressEnter();
         return this;
     }
 
