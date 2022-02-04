@@ -11,7 +11,7 @@ public class FindPage {
 
     public FindPage foundedFilms(String name){
         Assertions.assertTrue(films.getText().contains(name));
-        films.click();
+        films.scrollIntoView(true).click();
         return this;
     }
 }

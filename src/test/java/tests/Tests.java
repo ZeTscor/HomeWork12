@@ -58,7 +58,6 @@ public class Tests extends TestBase {
     @Flaky
     void FindFilmTest(String filmName){
         mainPage.openPage()
-                .acceptCookie()
                 .findFilm(filmName);
         findPage.foundedFilms(filmName);
         filmPage.InfoFilms();
