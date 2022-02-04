@@ -1,5 +1,6 @@
 package pages;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selenide.$x;
@@ -18,9 +19,9 @@ public class FilmPage {
         return this;
     }
     public FilmPage InfoFilms() {
-        freeView.shouldHave();
-        trellis.shouldHave();
-        castInfo.shouldHave();
+        freeView.shouldHave(Condition.visible);
+        trellis.shouldHave(Condition.visible);
+        castInfo.shouldHave(Condition.visible);
         return this;
     }
 

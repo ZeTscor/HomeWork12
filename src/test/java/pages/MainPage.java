@@ -15,7 +15,7 @@ public class MainPage {
             topTen = $x("//div[@class='VideoUnit_vline__header__2alTs'][.= 'Топ-10 на START']"),
             starProduct = $x("//div[@class='VideoUnit_vline__header__2alTs'][.= 'START представляет']"),
             trialButton = $("span[data-testid='try_free_button_text']"),
-            filmHref = $x("//div[@class='VideoUnit_vline__slider__3uu_U'][1]"),
+            filmHref = $x("//div[@class='VideoUnit_vline__slider__3uu_U'][4]"),
             profileIco = $x("//div[@class='HeaderMenu_header-menu-authorized__2K3x5'");
 
     public MainPage openPage() {

@@ -12,7 +12,7 @@ public class AuthorizationPage {
             signPage = $x("//div[@class='Sign_sign__form-title__3BM85'][.='Вход в аккаунт']"),
             signEmailField = $x("//input[@id='signField']"),
             signPasswordField = $x("//input[@id='signPassword']"),
-            buttonSign = $x("//div[@class='Button_red-button__hcJcf'][.='Войти']");
+            buttonSign = $x("//*[@class='Button_button-text__3dENX'][.='Войти']");
 
     public AuthorizationPage openPage(){
         open("https://start.ru/signin");
