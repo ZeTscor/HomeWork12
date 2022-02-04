@@ -51,6 +51,7 @@ public class Tests extends TestBase {
     @Test
     void FindFilmTest(){
         mainPage.openPage()
+                .acceptCookie()
                 .findFilm(DataStorage.NAME);
         findPage.foundedFilms(DataStorage.NAME);
         filmPage.InfoFilms();
