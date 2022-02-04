@@ -10,7 +10,7 @@ public class FilmPage {
     private SelenideElement
             ageAccept = $x("//div[@class='popups_check-age__button-agree__23TZ2'][.='Да']"),
             freeView = $x("//div[@class='TopBlock_TopBlock__button-play__28Kv- '][.= 'Смотреть бесплатно']"),
-            trellis = $x("//div[@class='Trailers_product__trailers__2TSWA'][.= 'Трейлер']"),
+            trellis = $x("//div[@class='Trailers_product__trailers-item-title__34jyB'][.= 'Трейлер']"),
             castInfo = $x("//div[@class='Cast_product__cast__Fppd9'][.= 'Актеры и съемочная группа']");
 
     public FilmPage openPage(){
