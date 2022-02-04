@@ -23,6 +23,7 @@ public class Tests extends TestBase {
 
     @Test
     @Flaky
+    @Disabled
     @DisplayName("Проверка регистрации")
     void FreeTrialTest() {
         freeTrial.openPage()
