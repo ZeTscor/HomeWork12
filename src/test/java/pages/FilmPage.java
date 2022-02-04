@@ -8,6 +8,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class FilmPage {
     private SelenideElement
+            ageAccept = $x("//div[@class='popups_check-age__button-agree__23TZ2'][.='Да']"),
             freeView = $x("//div[@class='TopBlock_TopBlock__button-play__28Kv- '][.= 'Смотреть бесплатно']"),
             trellis = $x("//div[@class='Trailers_product__trailers__2TSWA'][.= 'Трейлер']"),
             castInfo = $x("//div[@class='Cast_product__cast__Fppd9'][.= 'Актеры и съемочная группа']");
@@ -20,6 +21,7 @@ public class FilmPage {
         return this;
     }
     public FilmPage InfoFilms() {
+        ageAccept.click();
         freeView.shouldHave(Condition.visible);
         trellis.shouldHave(Condition.visible);
         castInfo.shouldHave(Condition.visible);

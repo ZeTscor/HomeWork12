@@ -41,8 +41,6 @@ public class Tests extends TestBase {
                 .typeEmail(DataStorage.EMAIL)
                 .typePassword(DataStorage.PASSWORD)
                 .signButton();
-        profilePage.openPage()
-                .emailAssert(DataStorage.EMAIL);
     }
     @Test
     void FilmTest(){
