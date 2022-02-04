@@ -12,7 +12,7 @@ public class FindPage {
 
     public FindPage foundedFilms(String name){
         SelenideElement
-                films = $x(("//*[contains(text(), '"+name+"')])[2]"));
+                films = $x("(//*[contains(text(), '"+name+"')])[2]");
         Assertions.assertTrue(films.getText().contains(name));
         cookieAcceptButton.click();
         films.click();
