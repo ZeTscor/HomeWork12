@@ -61,7 +61,8 @@ public class Tests extends TestBase {
     void FindFilmTest(String filmName){
         mainPage.openPage()
                 .findFilm(filmName);
-        findPage.foundedFilms(filmName);
+        findPage.foundedFilms(filmName)
+                        .redirectAsFilm();
         filmPage.InfoFilms();
     }
 }
