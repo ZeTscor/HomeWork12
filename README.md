@@ -39,7 +39,7 @@ ________
 ### <img src="image/logo/Selenoid.svg" width="40" height="40"/> Видео прохождения теста в Selenoid  
 
 
-<img src=image/screenshots/testFind.mp4>
+<img src="image/screenshots/testFind.mp4">
 
 
 ### <image/screenshots/img_2.png> Отчет о результатах тестирования в Allure Report
@@ -51,13 +51,13 @@ ________
 
 На данной странице представляется распределение выполнявшихся тестов по тестовым наборам или классам, в которых находятся тестовые методы.
 
-<img src=image/screenshots/img_6.png/>  
+<img src="image/screenshots/img_6.png/">  
 
 **2.** Страница «Timeline».  
 
 Данная страница визуализирует временные рамки прохождения каждого теста.  
 
-<img src=img src=image/screenshots/img_7.png/>  
+<img src=img src="image/screenshots/img_7.png/">  
 
 </details>  
 
@@ -69,15 +69,15 @@ ________
   
 📎 **Dashboards.**  
 
-<img src=image/screenshots/img_4.png/>  
+<img src="image/screenshots/img_4.png/">  
   
   
 
 ### <img src="image/logo/Jira.svg" width="30" height="30"/> Интеграция тестов c таск-трекер системой [Jira](https://jira.autotests.cloud/browse/HOMEWORK-323)  
 
-<img src=image/screenshots/img_5.png/>  
+<img src="image/screenshots/img_5.png/">  
  
 
 ### <img src="image/logo/Telegram.svg" width="30" height="30"/> Уведомления о прохождении тестов в Telegram  
 
-<img src=image/screenshots/img_8.png/>  
+<img src="image/screenshots/img_8.png/">  
