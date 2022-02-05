@@ -47,22 +47,24 @@ public class Tests extends TestBase {
                 .typePassword(DataStorage.PASSWORD)
                 .signButton();
     }
+
     @Test
     @DisplayName("Cтраничка фильма")
-    void FilmTest(){
+    void FilmTest() {
         filmPage.openPage()
                 .ageAccept()
                 .InfoFilms();
     }
+
     @DisplayName("Поиск по фильму")
     @ValueSource(strings = {"Маша и Медведь", "Отель Элеон"})
     @ParameterizedTest(name = "Поиск по фильмам {0}")
     @Flaky
-    void FindFilmTest(String filmName){
+    void FindFilmTest(String filmName) {
         mainPage.openPage()
                 .findFilm(filmName);
         findPage.foundedFilms(filmName)
-                        .redirectAsFilm();
+                .redirectAsFilm();
         filmPage.InfoFilms();
     }
 }

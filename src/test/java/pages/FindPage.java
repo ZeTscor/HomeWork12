@@ -20,7 +20,7 @@ public class FindPage {
 
     public FindPage redirectAsFilm(){
         cookieAcceptButton.click();
-        sleep(50);
+        sleep(200);
         films.click();
         return this;
     }
