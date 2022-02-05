@@ -36,13 +36,8 @@ ________
 
 <img src="image/screenshots/allure report1.jpg" width="1000" height="600"/>  
 
-### <img src="image/logo/Selenoid.svg" width="40" height="40"/> Видео прохождения теста в Selenoid  
 
-
-<img src="image/screenshots/testFind.mp4">
-
-
-### <image/screenshots/img_2.png> Отчет о результатах тестирования в Allure Report
+### <img src="image/logo/Allure_Report.svg" width="30" height="30"/> Отчет о результатах тестирования в Allure Report
 
 <details>
   <summary>Подробнее</summary>  
@@ -57,7 +52,7 @@ ________
 
 Данная страница визуализирует временные рамки прохождения каждого теста.  
 
-<img src=img src="image/screenshots/img_7.png/">  
+<img src="image/screenshots/img_7.png/">  
 
 </details>  
 
