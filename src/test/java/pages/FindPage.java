@@ -18,7 +18,7 @@ public class FindPage {
 //                films = $x("(//*[contains(text(), '"+name+"')])[2]");
         Assertions.assertTrue(films.getText().contains(name));
 
-        films.click();
+        films.scrollIntoView(true).click();
         return this;
     }
 }
