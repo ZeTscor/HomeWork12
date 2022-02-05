@@ -54,6 +54,7 @@ public class Tests extends TestBase {
                 .ageAccept()
                 .InfoFilms();
     }
+    @DisplayName("Поиск по фильму")
     @ValueSource(strings = {"Маша и Медведь", "Отель Элеон"})
     @ParameterizedTest(name = "Поиск по фильмам {0}")
     @Flaky
