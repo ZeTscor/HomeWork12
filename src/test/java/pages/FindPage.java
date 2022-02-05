@@ -4,6 +4,7 @@ import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.Assertions;
 
 import static com.codeborne.selenide.Selenide.$x;
+import static com.codeborne.selenide.Selenide.sleep;
 
 public class FindPage {
     SelenideElement
@@ -13,11 +14,13 @@ public class FindPage {
 
 
     public FindPage foundedFilms(String name){
-        cookieAcceptButton.click();
-//        SelenideElement
-//                films = $x("(//*[contains(text(), '"+name+"')])[2]");
         Assertions.assertTrue(films.getText().contains(name));
+        return this;
+    }
 
+    public FindPage redirectAsFilm(){
+        cookieAcceptButton.click();
+        sleep(50);
         films.click();
         return this;
     }
