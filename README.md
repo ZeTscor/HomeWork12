@@ -34,7 +34,6 @@ ________
 
 🔴 Для формирования отчета о прохождении тестов в Allure Report необходимо нажать на ссылку/иконку **"Allure Report"**.  
 
-<img src="image/screenshots/allure report1.jpg" width="1000" height="600"/>  
 <img src="image/screenshots/img_1.png">
 
 ### <img src="image/logo/Allure_Report.svg" width="30" height="30"/> Отчет о результатах тестирования в Allure Report
